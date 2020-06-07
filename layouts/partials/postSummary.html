@@ -6,11 +6,11 @@
     <div class="content post-summary">
         {{ .Summary | safeHTML }}
     </div>
-<!--         {{ if .Truncated }}
+    {{ if .Truncated }}
         <div class="read-more">
             <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
         </div>
-    {{ end }} -->
+    {{ end }} 
     
     {{ partial "postInfoFull.html" . }}
 </article>

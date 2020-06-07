@@ -1,18 +1,17 @@
-baseURL = "https://example.com"
+baseURL = "https://geekandlatin.com"
 languageCode = "en-us"
-title = "Anubis"
+title = "Geek and Latin"
 theme = "anubis"
-paginate = 3
+paginate = 5
 
-disqusShortname = ""
+disqusShortname = "sudarshan-reddy.github.io"
 googleAnalytics = ""
 
 [author]
-  name = "Dmitry Kolosov"
+  name = "Sudarshan"
 
 [params]
-   author = "Dmitry Kolosov"
-   description = "Anubis is a simple minimalist theme for Hugo blog engine."
+   author = "Sudarshan Reddy"
 
 [menu]
 
@@ -29,9 +28,9 @@ googleAnalytics = ""
     weight = 2
 
   [[menu.main]]
-    name = "Archive"
-    identifier = "archive"
-    url = "/posts/"
+    name = "resume"
+    identifier = "resume"
+    url = "/resume/"
     weight = 3
 
 [taxonomies]

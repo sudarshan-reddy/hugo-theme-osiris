@@ -198,6 +198,8 @@ header a {
 
 .site-header {
     white-space: nowrap;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 /* Pages */
@@ -228,16 +230,17 @@ article:not(:last-of-type) {
 }
 
 article header h1 {
-    font-size: 1.35em;
+    font-size: 1.75em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
     font-weight: 600;
+    color: #0096cc
 }
 
 article header h1 a {
     border: none;
     text-decoration: none;
-    color: #333;
+    color: #0096cc
 }
 
 .post-info {
@@ -298,7 +301,8 @@ article img {
 }
 
 .read-more {
-    font-size: 0.85em;
+    font-size: 1.05em;
+    color: #0096cc;
 }
 
 .divider {
@@ -404,7 +408,9 @@ ul.language-select > li {
     }
 
     header nav {
-        margin-top: 1em;
+        font-size: 1rem;
+        text-decoration: none;
+        margin-top: 2em;
         max-width: 100%;
         text-align: center;
         background: #fafafa;
