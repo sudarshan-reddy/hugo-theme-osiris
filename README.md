@@ -70,7 +70,8 @@ googleAnalytics = ""
 
 [taxonomies]
 category = "categories"
-tag = "tags"```
+tag = "tags"
+```
 
 ### Check your site
 
