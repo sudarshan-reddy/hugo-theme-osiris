@@ -1,8 +1,8 @@
-# Anubis Theme for Hugo
+# Osiris Theme for Hugo
 
-Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
+Osiris is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
-![Anubis Screenshot](https://raw.githubusercontent.com/mitrichius/hugo-theme-anubis/master/images/screenshot.png)
+![Osiris Screenshot](https://raw.githubusercontent.com/sudarshan-reddy/hugo-theme-anubis/master/images/screenshot.png)
 
 ## Features
 
@@ -22,7 +22,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
 Inside the folder of your Hugo site run:
 
-    $ git submodule add https://github.com/mitrichius/hugo-theme-anubis.git themes/anubis
+    $ git submodule add https://github.com/sudarshan-reddy/hugo-theme-osiris.git themes/osiris
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -30,36 +30,47 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 After installing the theme successfully it requires a just a few more steps to get your site running.
 
 ### Update config file
-If you have toml config (which is by default), you should rename it to config.yaml or adapt this config for toml syntax.
 
-Example of config.yaml:
-```yaml
-languageCode: "en-us"
-baseUrl: ""
-title: "Anubis"
-theme: "anubis"
-paginate: 10
-disqusShortname: yourdiscussshortname
-googleAnalytics: UA-123-45
-enableRobotsTXT: true
+Example of config.toml:
+```toml
+baseURL = "https://baseurl.com"
+languageCode = "en-us"
+title = "Your Blog"
+theme = "osiris"
+paginate = 5
 
-menu:
-  main:
-  - identifier: archive
-    name: Archive
-    title: Archive
-    url: /posts/
-    weight: 0
+disqusShortname = ""
+googleAnalytics = ""
 
-params:
-  author: ""
-  description: ""
-  images:
-    - images/og-featured.png # relative path to "static" directory
-  customCSS:
-    - css/my.css # relative path to "static" directory
-  dateFormat: "2006-01-02"
-```
+[author]
+  name = "Sudarshan"
+
+[params]
+   author = "Sudarshan Reddy"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "github"
+    name = "Github"
+    url = "https://github.com/sudarshan-reddy/"
+    weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"```
 
 ### Check your site
 
@@ -76,9 +87,6 @@ Only works for production environment. You either build your site with variable 
 `HUGO_ENV=production hugo --minify`
 or just put `env: production` to `params` section of config.
 
-### Multilingual mode 
-Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
-
 ### Robots.txt
 Based on environment.  
 For production — allow all, for other — disallow all.
@@ -86,15 +94,8 @@ For production — allow all, for other — disallow all.
 ### Favorite posts
 To mark posts as favorite just add `favorite: true` in post's front matter. It adds a "★" icon nearby post's title. 
 
-## Contributing
-
-If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues).
-
-## TODO
-See [issues](https://github.com/mitrichius/hugo-theme-anubis/issues).
-
 ## License
 MIT
 
-(c) Dmitry Kolosov
+(c) Sudarshan Reddy
 2020
